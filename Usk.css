@@ -3,9 +3,8 @@
   padding: 0;
 }
 header {
-  background-color: rgb(234, 236, 237);
+  background-color: rgba(179, 177, 177, 0.55);
   border: none;
-  border-radius: 10px;
 }
 header div {
   display: flex;
@@ -20,18 +19,18 @@ header span {
   color: white;
   transform: translateX(-300px);
 }
-header span h1{
+header span h1 {
   display: flex;
   justify-content: center;
- transform: translateX(-270px);
+  transform: translateX(-270px);
   color: rgb(22, 67, 22);
   text-decoration: underline;
   white-space: nowrap;
 }
-header span h3{
+header span h3 {
   display: flex;
   justify-content: center;
- transform: translateX(-270px);
+  transform: translateX(-270px);
   color: rgba(22, 67, 22, 0.571);
   text-decoration: dotted;
 }
@@ -43,7 +42,103 @@ header nav ul {
   text-decoration: none;
   color: grey;
 }
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
-  color: rgb(7, 138, 53);
+  color: #078a35;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav svg {
+  color: #16431692;
+  gap: 20px;
+  transform: translateX(60px);
+}
+main .servicesA div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.servicesA {
+  background-color: rgba(4, 74, 4, 0.897);
+  padding: 40px;
+  height: 80px;
+}
+.servicesA a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 20px;
+  gap: 20px;
+  border-right: 1px solid;
+  align-self: stretch;
+}
+.services {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .servicesA div a svg {
+  background-color: #ebebeb;
+  padding: 8px;
+  border: none;
+  border-radius: 100px;
+}
+.servicesA a:last-child {
+  border: none;
+}
+section div img {
+  margin: 10px;
+  transform: translateX(0px) translateY(-30px);
+
+  border: 1px solid;
+  padding: 1px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+.about-left h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #072110;
+  border-bottom: 1px solid grey;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+#about-a {
+  display: flex;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+  color: grey;
+}
+.upcoming-events h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  display: inline-block;
+  margin-left: 200px;
+}
+.event-list {
+  height: 200px;
+  width: 50%;
+  overflow-y: scroll;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-left: 200px;
+  padding: 10px;
 }
